@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:orientation="horizontal">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffff">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_horizontal_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingBottom="@dimen/activity_horizontal_margin"
+            android:scaleType="fitXY"
+            android:src="@drawable/holder_dish"
+            android:id="@+id/dishImage" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/dishImage"
+            android:layout_toEndOf="@+id/dishImage">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Ginger Garlic Bread"
+            android:textSize="20sp"
+            android:textColor="#BF000000"
+            android:id="@+id/dishNameText"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rs. 120"
+            android:textColor="#80000000"
+            android:textSize="18sp"
+            android:paddingTop="5dp"
+            android:id="@+id/dishPriceText" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
